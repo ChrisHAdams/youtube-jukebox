@@ -1,3 +1,3 @@
-const ApiKey = 'AIzaSyB3DZMvPLkERa3LbViS-XsRpUH35Ax4ZEE';
+const ApiKey = ''; // Add your Google API Key here.
 
 export default ApiKey;
