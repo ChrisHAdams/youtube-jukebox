@@ -1,0 +1,8 @@
+YouTube API Key
+AIzaSyB3DZMvPLkERa3LbViS-XsRpUH35Ax4ZEE
+
+OAuth Client Id
+483459046466-68jj5e6lketk95mmqqa78d446clfuj2h.apps.googleusercontent.com
+
+Client Secret
+NnM52ya8cf7RxRPT_viri-xm
