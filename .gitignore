@@ -72,4 +72,4 @@ yarn-error.log
 
 apikey.txt
 
-src/config/
+src/config/*.txt
