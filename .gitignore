@@ -72,3 +72,5 @@ yarn-error.log
 .gitignore
 
 apikey.txt
+
+src/config/
