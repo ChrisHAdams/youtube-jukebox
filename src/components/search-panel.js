@@ -5,13 +5,25 @@ import SearchBar from './search-bar';
 import SearchResults from './search-results';
 import ApiKey from '../config/apiKey';
 
-const SearchPanelStyle = Styled.div`
+const SearchPanelStyleLight = Styled.div`
   grid-area: SearchPanel;
   box-shadow: inset 0 1px 2px 0 hsla(0, 0%, 0%, 0.08);
   border-radius: 3px 3px 3px 3px;
   background-color: #f4f5f7;
   margin-top: 2px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  border-top: 2px;
+  margin-left: 3px;
+`
+
+const SearchPanelStyleDark = Styled.div`
+  grid-area: SearchPanel;
+  box-shadow: inset 0 1px 2px 0 hsla(0, 0%, 0%, 0.08);
+  border-radius: 3px 3px 3px 3px;
+  background-color: #293447;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  margin-left: 3px;
   border-top: 2px;
 `
 
@@ -80,6 +92,8 @@ class SearchPanel extends React.Component  {
   }
 
   render() {
+    const SearchPanelStyle = this.props.lightTheme ? SearchPanelStyleLight : SearchPanelStyleDark;
+
     return (
       <SearchPanelStyle>
         <SearchBar

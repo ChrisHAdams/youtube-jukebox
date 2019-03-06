@@ -1,5 +1,6 @@
 import React from "react"
 import Styled from 'styled-components';
+import CleanseString from '../javascript/cleanse-string';
 
 const SearchResultStyleLight = Styled.div`
   min-width: 10vw;
@@ -37,8 +38,15 @@ const SearchResultStyleDark = Styled.div`
 `
 
 const SearchResultTextStyleDark = Styled.p `
+
   background-color: #293447;
-  color: white;
+  color: #5d5e63;
+  padding-bottom: 2px;
+  padding-bottom: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size:11px;
+
 `
 
 const ImageStyle = Styled.img`
@@ -66,17 +74,18 @@ class SearchResult extends React.Component {
 
     const SearchResultStyle = this.props.lightTheme ? SearchResultStyleLight : SearchResultStyleDark;
     const SearchResultTextStyle = this.props.lightTheme ? SearchResultTextStyleLight : SearchResultTextStyleDark;
+    const title = CleanseString(this.props.video.title);
 
     return (
       <div>
         <SearchResultStyle key={this.props.video.id} >
           <ImageStyle
-            title={this.props.video.title}
-            alt={this.props.video.title}
+            title={title}
+            alt={title}
             src={this.props.video.thumbnails.default.url}
             onClick={this.handleClick}
             lightTheme={this.props.lightTheme} />
-          <SearchResultTextStyle>{this.props.video.title.substring(0,25)}...</SearchResultTextStyle>
+          <SearchResultTextStyle>{title.substring(0,25)}...</SearchResultTextStyle>
         </SearchResultStyle>
       </div>
     );

@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player';
 const VideoPlayerStyleLight = Styled.div`
   grid-area: VideoPlayer;
   border-radius: 3px 3px 3px 3px;
-  height: 99%;
+  height: 100%;
   width: 99%;
   background-color: #f4f5f7;
   position: relative;
@@ -28,12 +28,16 @@ const VideoPlayerMessageStyle = Styled.p`
 
 const VideoPlayerStyleDark = Styled.div`
   grid-area: VideoPlayer;
-  border-style: solid;
-  height: 99%;
+  border-radius: 3px 3px 3px 3px;
+  height: 100%;
   width: 99%;
-  min-height: 220px;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #293447;
-  color: white;
+  color: #5d5e63;
 
 `
 
@@ -68,9 +72,7 @@ class VideoPlayer extends React.Component {
 
       return (
         <VideoPlayerStyle>
-          <VideoPlayerMessageStyle>
-            <p>No videos are queued.  Log in to your Google/YouTube account and search</p>
-          </VideoPlayerMessageStyle>
+          <VideoPlayerMessageStyle>No videos are queued.  Log in to your Google/YouTube account and search.</VideoPlayerMessageStyle>
         </VideoPlayerStyle>
       );
 
@@ -85,8 +87,8 @@ class VideoPlayer extends React.Component {
             onStart={this.props.onStart}
             onPlay={this.props.onPlay}
             onEnded={this.props.onEnded}
-            width="100%"
-            height="100%"
+            width="99%"
+            height="99%"
             url={this.props.url}
             playing={true}
             config={{

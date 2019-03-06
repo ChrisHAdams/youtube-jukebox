@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 import QueueItem from '../atoms/queue-item'
 
 
-const VideoQueueStyleLight = Styled.div`
+const VideoQueueStyleLightx = Styled.div`
   grid-area: VideoQueue;
   min-height: 65vh;
   max-height: 65vh;
@@ -11,13 +11,32 @@ const VideoQueueStyleLight = Styled.div`
   background-color: #f4f5f7;
 `
 
-const VideoQueueStyleDark = Styled.div`
-  grid-area: RightPanel;
-  background-color: #293447;
+const VideoQueueStyleDarkx = Styled.div`
+  grid-area: VideoQueue;
+  background-color: #5b75a0;
   color: white;
-  min-height: 60vh;
-  max-height: 67vh;
+  min-height: 65vh;
+  max-height: 65vh;
   overflow-x: auto;
+`
+const VideoQueueStyleLight = Styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  white-space: nowrap;
+  background-color: #f4f5f7;
+  color: black;
+  max-height: 65vh;
+`
+
+const VideoQueueStyleDark = Styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow-y auto;
+  white-space: nowrap;
+  background-color: #5b75a0;
+  color: white;
+  max-height: 65vh;
 `
 
 function QueueList(searchResults, lightTheme, moveVideoUpQueue, moveVideoDownQueue, removeFromQueue, playNow) {

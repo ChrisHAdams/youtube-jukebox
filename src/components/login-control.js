@@ -14,6 +14,7 @@ class LoginControl extends React.Component  {
 
   loginFailure = (response) => {
     console.log("Failed Login");
+    console.log(response);
     this.props.onLoggedInChange(false);
     this.props.onProfileObjectChange({});
   }

@@ -17,7 +17,7 @@ const SearchResultsStyleDark = Styled.div`
   flex-direction: row;
   overflow-x: auto;
   white-space: nowrap;
-  background-color: #293447;
+  background-color: #5b75a0;
   color: white;
 `
 

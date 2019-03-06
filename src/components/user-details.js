@@ -3,10 +3,12 @@ import Styled from 'styled-components';
 
 
 const UserDetailsStyleLight = Styled.div`
-  background-color: white;
+  background-color: #f4f5f7;
   font-color: black;
   font-family: arial;
   font-size: 12px;
+  margin-top: 3px;
+  margin-left:2px;
 `
 
 const UserDetailsStyleDark = Styled.div`
@@ -14,6 +16,9 @@ const UserDetailsStyleDark = Styled.div`
   font-color: white;
   font-family: arial;
   font-size: 12px;
+  margin-top: 3px;
+  margin-left:2px;
+  padding-top: 3px;
 `
 
 export default function UserDetails(props){
