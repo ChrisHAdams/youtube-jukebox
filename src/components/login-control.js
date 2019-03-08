@@ -2,9 +2,22 @@ import React from 'react';
 import { GoogleLogin, GoogleLogout} from 'react-google-login';
 import ThemeChangeButton from '../atoms/theme-change-button';
 import ApiClientKey from '../config/apiClientId';
-
+import MyApiClientKey from '../config/apiClientIdMine';
 
 class LoginControl extends React.Component  {
+
+  constructor(props) {
+    super(props);
+
+    this.apiKey = '';
+
+    if(ApiClientKey.length > 0) {
+      this.apiKey = ApiClientKey;
+    } else {
+      this.apiKey = MyApiClientKey;
+    }
+
+  }
 
   loginSuccess = (response) => {
     console.log("Successful Login");
@@ -21,6 +34,7 @@ class LoginControl extends React.Component  {
 
   logoutSuccess = (response) => {
     console.log("Successful Logout");
+    console.log(response);
     this.props.onLoggedInChange(false);
     this.props.onProfileObjectChange({});
   }
@@ -30,7 +44,7 @@ class LoginControl extends React.Component  {
       return (
         <div>
         <GoogleLogin
-          clientId="483459046466-68jj5e6lketk95mmqqa78d446clfuj2h.apps.googleusercontent.com"
+          clientId={this.apiKey}
           render={renderProps => (
             <button onClick={renderProps.onClick}>Login</button>
           )}

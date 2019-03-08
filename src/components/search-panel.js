@@ -4,6 +4,7 @@ import YouTubeSearch from 'youtube-search';
 import SearchBar from './search-bar';
 import SearchResults from './search-results';
 import ApiKey from '../config/apiKey';
+import MyApiKey from '../config/apiKeyMine';
 
 const SearchPanelStyleLight = Styled.div`
   grid-area: SearchPanel;
@@ -40,6 +41,13 @@ class SearchPanel extends React.Component  {
     this.searchValueChange = this.searchValueChange.bind(this);
     this.searchValueReset = this.searchValueReset.bind(this);
     this.youTubeSearch = this.youTubeSearch.bind(this);
+    this.apiKey = '';
+
+    if(ApiKey.length > 0) {
+      this.apiKey = ApiKey;
+    } else {
+      this.apiKey = MyApiKey;
+    }
 
   }
 
@@ -75,7 +83,7 @@ class SearchPanel extends React.Component  {
 
     var opts = {
       maxResults: 20,
-      key: ApiKey
+      key: this.apiKey
     };
 
     return new Promise(

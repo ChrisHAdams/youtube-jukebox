@@ -6,7 +6,6 @@ const SearchResultStyleLight = Styled.div`
   min-width: 10vw;
   max-width: 12vw;
   min-height:12vh;
-  max-height: 12vh:
   font-size:14px;
   margin: 4px;
   padding: 4px;
@@ -28,9 +27,10 @@ const SearchResultTextStyleLight = Styled.p `
 const SearchResultStyleDark = Styled.div`
   min-width: 10vw;
   max-width: 12vw;
-  min-height:20px;
+  min-height:12vh;
   font-size:12px;
-  margin: 2px;
+  margin: 4px;
+  padding: 4px;
   font-family: arial;
   color: white;
   border-radius: 3px 3px 3px 3px;

@@ -72,4 +72,5 @@ yarn-error.log
 
 apikey.txt
 
-src/config/*.txt
+src/config/apiKeyMine.js
+src/config/apiClientIdMIne.js

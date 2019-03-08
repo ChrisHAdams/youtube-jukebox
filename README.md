@@ -38,7 +38,7 @@ Once the app starts, you need to log in to you Google/YouTube account, you'll ha
 
 - **Searching** Just type in the search box and click the button.  Click any of the results to play the first video.  Subsequent videos you click will be queued up.  When a video finishes playing, the next video starts and so on until the queue is empty.
 
-- ** Queue** You can manipulate the queue by using up and down icons.  You can remove items by clicking the 'x' icon.  Lastly, if you want to play something from the queue immediately, just click the image of the item in the link.
+- **Queue** You can manipulate the queue by using up and down icons.  You can remove items by clicking the 'x' icon.  Lastly, if you want to play something from the queue immediately, just click the image of the item in the link.
 
 
 **Tests**
