@@ -72,7 +72,7 @@ class VideoPlayer extends React.Component {
 
       return (
         <VideoPlayerStyle>
-          <VideoPlayerMessageStyle>No videos are queued.  Log in to your Google/YouTube account and search.</VideoPlayerMessageStyle>
+          <VideoPlayerMessageStyle>No videos are queued...</VideoPlayerMessageStyle>
         </VideoPlayerStyle>
       );
 

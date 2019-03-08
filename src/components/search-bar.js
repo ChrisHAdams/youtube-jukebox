@@ -3,6 +3,7 @@ import Styled from 'styled-components';
 import SearchField from '../atoms/search-field';
 import SearchButton from '../atoms/search-button';
 import SearchResetButton from '../atoms/search-reset-button';
+import ThemeChangeButton from '../atoms/theme-change-button';
 
 const SearchBarStyle = Styled.div`
 
@@ -30,6 +31,7 @@ class SearchBar extends React.Component  {
         />
         <SearchButton searchOnClick={this.props.searchOnClick}/>
         <SearchResetButton resetOnClick={this.props.resetOnClick}/>
+        <ThemeChangeButton onClick={this.props.themeChange}/>
       </SearchBarStyle>
     )
   }

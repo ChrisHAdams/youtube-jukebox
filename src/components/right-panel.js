@@ -2,7 +2,6 @@ import React from "react";
 import Styled from 'styled-components';
 import VideoQueue from "../components/video-queue";
 import LoginControl from "../components/login-control";
-import UserDetails from "../components/user-details";
 
 const RightPanelStyleLight = Styled.div`
   grid-area: RightPanel;
@@ -55,16 +54,6 @@ class RightPanel extends React.Component  {
 
     return (
       <RightPanelStyle>
-        <UserDetails
-          loggedIn={this.props.loggedIn}
-          profileObject={this.props.profileObject}
-          lightTheme={this.props.lightTheme} />
-        <LoginControl
-          loggedIn={this.props.loggedIn}
-          onLoggedInChange={this.props.onLoggedInChange}
-          onProfileObjectChange={this.props.onProfileObjectChange}
-          lightTheme={this.props.lightTheme}
-          themeChange={this.props.themeChange} />
         <VideoQueue
           videoQueue={this.props.videoQueue}
           lightTheme={this.props.lightTheme}

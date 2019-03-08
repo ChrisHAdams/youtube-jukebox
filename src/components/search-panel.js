@@ -110,7 +110,8 @@ class SearchPanel extends React.Component  {
           loggedIn={this.props.loggedIn}
           searchOnClick={this.youTubeSearch}
           resetOnClick={this.searchValueReset}
-          lightTheme={this.props.lightTheme} />
+          lightTheme={this.props.lightTheme}
+          themeChange={this.props.themeChange} />
         <SearchResults
           results={this.state.searchResults}
           pushVideoToQueue={this.props.pushVideoToQueue}
