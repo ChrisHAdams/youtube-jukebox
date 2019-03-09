@@ -15,7 +15,7 @@ const Container = Styled.div`
 
   grid-template-columns: 6fr 1fr;
   grid-template-rows: 6fr 2fr;
-  height: 98vh;
+  height: 99vh;
 
 `
 class App extends React.Component  {
@@ -23,7 +23,7 @@ class App extends React.Component  {
   constructor(props) {
     super(props);
 
-    this.state = {loggedIn: false,
+    this.state = {loggedIn: true,
                   profileObject: {},
                   videoQueue: [],
                   currentVideo: '',
@@ -45,7 +45,7 @@ class App extends React.Component  {
   }
 
   handleThemeChange() {
-
+console.log("Theme Change clicked");
     const newValue = this.state.lightTheme ? false : true;
 
     this.setState({lightTheme: newValue});
@@ -202,7 +202,6 @@ class App extends React.Component  {
           moveVideoDownQueue={this.moveVideoDownQueue}
           playNow={this.playNow}
           removeFromQueue={this.removeFromQueue}
-          themeChange={this.handleThemeChange}
           lightTheme={this.state.lightTheme}
         />
         <VideoPlayer
@@ -217,6 +216,7 @@ class App extends React.Component  {
           loggedIn={this.state.loggedIn}
           pushVideoToQueue={this.pushVideoToQueue}
           lightTheme={this.state.lightTheme}
+          themeChange={this.handleThemeChange}
         />
       </Container>
     )

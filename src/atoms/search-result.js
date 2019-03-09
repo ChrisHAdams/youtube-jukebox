@@ -5,7 +5,7 @@ import CleanseString from '../javascript/cleanse-string';
 const SearchResultStyleLight = Styled.div`
   min-width: 10vw;
   max-width: 12vw;
-  min-height:12vh;
+  min-height:50px;
   font-size:14px;
   margin: 4px;
   padding: 4px;
@@ -27,7 +27,7 @@ const SearchResultTextStyleLight = Styled.p `
 const SearchResultStyleDark = Styled.div`
   min-width: 10vw;
   max-width: 12vw;
-  min-height:12vh;
+  min-height:15vh;
   font-size:12px;
   margin: 4px;
   padding: 4px;

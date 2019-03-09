@@ -13,8 +13,6 @@ const SearchPanelStyleLight = Styled.div`
   background-color: #f4f5f7;
   margin-top: 2px;
   margin-bottom: 4px;
-  border-top: 2px;
-  margin-left: 3px;
 `
 
 const SearchPanelStyleDark = Styled.div`
@@ -24,8 +22,6 @@ const SearchPanelStyleDark = Styled.div`
   background-color: #293447;
   margin-top: 2px;
   margin-bottom: 4px;
-  margin-left: 3px;
-  border-top: 2px;
 `
 
 class SearchPanel extends React.Component  {
@@ -110,7 +106,8 @@ class SearchPanel extends React.Component  {
           loggedIn={this.props.loggedIn}
           searchOnClick={this.youTubeSearch}
           resetOnClick={this.searchValueReset}
-          lightTheme={this.props.lightTheme} />
+          lightTheme={this.props.lightTheme}
+          themeChange={this.props.themeChange} />
         <SearchResults
           results={this.state.searchResults}
           pushVideoToQueue={this.props.pushVideoToQueue}

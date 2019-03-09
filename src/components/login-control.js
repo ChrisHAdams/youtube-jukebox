@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoogleLogin, GoogleLogout} from 'react-google-login';
-import ThemeChangeButton from '../atoms/theme-change-button';
+
 import ApiClientKey from '../config/apiClientId';
 import MyApiClientKey from '../config/apiClientIdMine';
 
@@ -54,7 +54,7 @@ class LoginControl extends React.Component  {
           onSuccess={this.loginSuccess}
           onFailure={this.loginFailure}
         />
-        <ThemeChangeButton onClick={this.props.themeChange}/>
+
         </div>
       )
     } else {
@@ -67,7 +67,7 @@ class LoginControl extends React.Component  {
           )}
           onLogoutSuccess={this.logoutSuccess}
         />
-        <ThemeChangeButton onClick={this.props.themeChange}/>
+
         </div>
       )
     }
