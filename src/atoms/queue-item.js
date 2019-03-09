@@ -5,7 +5,7 @@ import { FaArrowAltCircleDown } from 'react-icons/fa';
 import { FaTimesCircle } from 'react-icons/fa';
 import CleanseString from '../javascript/cleanse-string';
 
-const QueueItemStyle = Styled.div`
+const QueueItemStyleLight = Styled.div`
 
   min-width: 10vw;
   max-wdith: 12vw;
@@ -13,18 +13,13 @@ const QueueItemStyle = Styled.div`
   margin-top: 4px;
   margin-left: 6px;
   margin-right: 6px;
+  margin-bottom: 4px;
   padding 1px;
   font-family: arial;
-  background-color: #293447;
+  background-color: #a7aebc;
   color: #5d5e63;
   border-radius: 3px 3px 3px 3px;
 
-  ${props =>
-    props.lightTheme &&
-    css`
-    background-color: #a7aebc;
-    color: #5d5e63;
-    `};
 `
 
 
@@ -36,6 +31,7 @@ const QueueItemStyleDark = Styled.div`
   margin-top: 4px;
   margin-left: 6px;
   margin-right: 6px;
+  margin-bottom: 4px;
   padding 1px;
   font-family: arial;
   background-color: #293447;
@@ -102,7 +98,7 @@ class QueueItem extends React.Component {
 
   render() {
 
-    //const QueueItemStyle = this.props.lightTheme ? QueueItemStyleLight : QueueItemStyleDark;
+    const QueueItemStyle = this.props.lightTheme ? QueueItemStyleLight : QueueItemStyleDark;
     const shortTitle = CleanseString(this.props.video.title).substring(0,25);
     const title = CleanseString(this.props.video.title);
 
