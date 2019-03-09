@@ -4,6 +4,7 @@ import ReactPlayer from 'react-player';
 
 
 const VideoPlayerStyleLight = Styled.div`
+  box-shadow: inset 0 1px 2px 0 hsla(0, 0%, 0%, 0.08);
   grid-area: VideoPlayer;
   border-radius: 3px 3px 3px 3px;
   height: 100%;
@@ -11,9 +12,17 @@ const VideoPlayerStyleLight = Styled.div`
   background-color: #f4f5f7;
   position: relative;
   float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+`
+
+const VideoPlayerStyleDark = Styled.div`
+  grid-area: VideoPlayer;
+  border-radius: 3px 3px 3px 3px;
+  height: 100%;
+  width: 99%;
+  position: relative;
+  float: left;
+  background-color: #293447;
+  color: #5d5e63;
 `
 
 const VideoPlayerMessageStyle = Styled.p`
@@ -26,20 +35,6 @@ const VideoPlayerMessageStyle = Styled.p`
   transform: translate(-50%, -50%);
 `
 
-const VideoPlayerStyleDark = Styled.div`
-  grid-area: VideoPlayer;
-  border-radius: 3px 3px 3px 3px;
-  height: 100%;
-  width: 99%;
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #293447;
-  color: #5d5e63;
-
-`
 
 class VideoPlayer extends React.Component {
 
@@ -87,8 +82,8 @@ class VideoPlayer extends React.Component {
             onStart={this.props.onStart}
             onPlay={this.props.onPlay}
             onEnded={this.props.onEnded}
-            width="99%"
-            height="99%"
+            width="100%"
+            height="100%"
             url={this.props.url}
             playing={true}
             config={{

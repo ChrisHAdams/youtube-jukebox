@@ -9,11 +9,10 @@ const QueueItemStyleLight = Styled.div`
 
   min-width: 10vw;
   max-wdith: 12vw;
-  min-height: 15px;
   font-size: 11px;
-  margin-top: 3px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
   padding 1px;
   font-family: arial;
   background-color: #a7aebc;
@@ -26,11 +25,10 @@ const QueueItemStyleDark = Styled.div`
 
   min-width: 10vw;
   max-wdith: 12vw;
-  min-height: 15px;
   font-size: 11px;
-  margin-top: 3px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
   padding 1px;
   font-family: arial;
   background-color: #293447;

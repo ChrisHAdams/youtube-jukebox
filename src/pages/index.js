@@ -15,7 +15,7 @@ const Container = Styled.div`
 
   grid-template-columns: 6fr 1fr;
   grid-template-rows: 6fr 2fr;
-  height: 98vh;
+  height: 99vh;
 
 `
 class App extends React.Component  {
