@@ -45,7 +45,7 @@ class App extends React.Component  {
   }
 
   handleThemeChange() {
-console.log("Theme Change clicked");
+
     const newValue = this.state.lightTheme ? false : true;
 
     this.setState({lightTheme: newValue});

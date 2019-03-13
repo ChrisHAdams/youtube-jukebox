@@ -8,7 +8,6 @@ import CleanseString from '../javascript/cleanse-string';
 const QueueItemStyleLight = Styled.div`
 
   min-width: 10vw;
-  max-wdith: 12vw;
   font-size: 11px;
   margin-top: 4px;
   margin-left: 6px;
@@ -26,7 +25,6 @@ const QueueItemStyleLight = Styled.div`
 const QueueItemStyleDark = Styled.div`
 
   min-width: 10vw;
-  max-wdith: 12vw;
   font-size: 11px;
   margin-top: 4px;
   margin-left: 6px;
