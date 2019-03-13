@@ -2,7 +2,7 @@
   A Gatsby YouTube Jukebox
 </h1>
 
-I love YouTube, but it doesn't allow you to queue videos and even when searching for something it stops the current video.  I had a look around GitHub, but couldn't quite find what I was looking for, so I built my own using  <a href="https://www.gatsbyjs.org">Gatsby</a>  If I'm honest, I wanted a small project to try Gatsby.  I've been using React for a few projects at work, but hadn't had the opportunity to try Gatsby.
+I love YouTube, but it doesn't allow you to queue videos and even when searching for something it stops the current video.  I had a look around GitHub, but couldn't quite find what I was looking for, so I built my own using  <a href="https://www.gatsbyjs.org">Gatsby</a>.  If I'm honest, I wanted a small project to try Gatsby.  I've been using React for a few projects at work, but hadn't had the opportunity to try Gatsby.
 
 What I wanted to be able to do is to search and queue videos without stopping the currently playing video.  I also wanted to be able to manipulate the order of videos in the queue.  For example, move items up and and down, remove or 'play now'.
 
