@@ -24,7 +24,7 @@ gatsby build
 followed by
 ```
 gatsby serve
-
+```
 
 **API Key**
 
