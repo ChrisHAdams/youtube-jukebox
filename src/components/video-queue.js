@@ -3,7 +3,6 @@ import Styled from 'styled-components';
 import QueueItem from '../atoms/queue-item'
 
 
-
 const VideoQueueStyleLight = Styled.div`
   display: flex;
   flex-direction: column;

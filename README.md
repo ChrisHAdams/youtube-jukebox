@@ -16,11 +16,21 @@ Simply clone the repo and run
 gatsby develop
 ```
 
+or
+
+```
+gatsby build
+```
+followed by
+```
+gatsby serve
+
+
 **API Key**
 
 To be able to use the YouTube Search API, you need a Google/YouTube API key.  As with Node setup, I'm not going into how to obtain the keys.  There's plenty of help on the Internet and Google's own site is helpful enough.
 
-When you have the key, update the file in the config folder.
+When you have the key, update the apiKey.js file in the config folder.
 
 **Using the Jukebox**
 
@@ -44,5 +54,15 @@ Once the app starts, you can search, queue and play videos.  I've also used Chro
 
 **Tests**
 
-I'm sorry to say there are no tests and this is something I'll address soon...
+I've added some snapshot and component tests.  The tests are written with Jest and Enzyme.
+
+To run,
+```
+npm run-script test
+```
+
+If you make any changes to the components, you'll need to update test snapshots.
+```
+npm run-script test-update
+```
 
