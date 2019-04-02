@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeChangeButton renders correctly 1`] = `
+<button
+  className="sc-bdVaJa fwQqyE"
+  data-testid="themeChangeButton"
+>
+  Change Theme
+</button>
+`;

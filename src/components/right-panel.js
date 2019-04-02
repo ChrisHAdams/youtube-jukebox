@@ -28,7 +28,6 @@ class RightPanel extends React.Component  {
 
   constructor(props) {
     super(props);
-    console.log("Light Theme? " + this.props.lightTheme);
   }
 
 
@@ -43,7 +42,7 @@ class RightPanel extends React.Component  {
     }
 
     return (
-      <RightPanelStyle>
+      <RightPanelStyle data-testid="rightPanel">
         <VideoQueue
           videoQueue={this.props.videoQueue}
           lightTheme={this.props.lightTheme}

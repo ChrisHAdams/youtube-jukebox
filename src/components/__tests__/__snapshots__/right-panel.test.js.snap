@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RightPanel renders correctly 1`] = `
+<div
+  className="sc-dnqmqq cNtSNl"
+  data-testid="rightPanel"
+>
+  <div
+    className="sc-gzVnrw iobIbK"
+  />
+</div>
+`;

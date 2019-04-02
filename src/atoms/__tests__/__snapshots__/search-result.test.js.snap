@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResult renders correctly 1`] = `
+<div>
+  <div
+    className="sc-htpNat dAUblb"
+    data-testid="searchResult"
+  >
+    <img
+      alt="Some Title"
+      className="sc-ifAKCX eBOhBv"
+      data-testid="searchResultImage"
+      onClick={[Function]}
+      src="www.something"
+      title="Some Title"
+    />
+    <p
+      className="sc-bxivhb jhgCzO"
+    >
+      Some Title
+      ...
+    </p>
+  </div>
+</div>
+`;

@@ -15,11 +15,12 @@ const SearchField= Styled.input`
 export default (props) =>
 <div>
   <SearchField
+    data-testid="searchField"
     type="text"
     name="searchField"
     placeholder="Search for videos"
     value={props.searchValue}
     onChange={props.searchValueChange}
     disabled={!props.loggedIn} />
-  </div>
+</div>
 

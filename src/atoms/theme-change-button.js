@@ -6,4 +6,4 @@ const ThemeChangeButton= Styled.button`
   margin: 1px;
 `
 
-export default (props) => <ThemeChangeButton  onClick={props.onClick}>Change Theme</ThemeChangeButton>
+export default (props) => <ThemeChangeButton data-testid="themeChangeButton" onClick={props.onClick}>Change Theme</ThemeChangeButton>

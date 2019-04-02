@@ -18,12 +18,10 @@ const QueueItemStyleLight = Styled.div`
   background-color: #a7aebc;
   color: #5d5e63;
   border-radius: 3px 3px 3px 3px;
-
 `
 
 
 const QueueItemStyleDark = Styled.div`
-
   min-width: 10vw;
   font-size: 11px;
   margin-top: 4px;
@@ -35,7 +33,6 @@ const QueueItemStyleDark = Styled.div`
   background-color: #293447;
   color: #5d5e63;
   border-radius: 3px 3px 3px 3px;
-
 `
 
 const ImageStyle = Styled.img`
@@ -102,22 +99,25 @@ class QueueItem extends React.Component {
 
     return (
       <div>
-        <QueueItemStyle key={this.props.video.id} >
+        <QueueItemStyle key={this.props.video.id} data-testid="container">
           <ImageStyle
             title={title}
             alt={title}
             src={this.props.video.thumbnails.default.url}
-            onClick={this.handlePlayNow} />
+            onClick={this.handlePlayNow}
+            data-testid="playNow"
+          />
+
           <TitleWrapper>{shortTitle}</TitleWrapper>
           <IconWrapper>
             <Icon>
-              <FaArrowAltCircleUp size={"2em"} onClick={this.handleMoveUpClick} />
+              <FaArrowAltCircleUp data-testid="up" size={"2em"} onClick={this.handleMoveUpClick} />
             </Icon>
             <Icon>
-              <FaArrowAltCircleDown size={"2em"} onClick={this.handleMoveDownClick} />
+              <FaArrowAltCircleDown data-testid="down" size={"2em"} onClick={this.handleMoveDownClick} />
             </Icon>
             <Icon>
-              <FaTimesCircle size={"2em"} onClick={this.handleRemoveClick} />
+              <FaTimesCircle data-testid="remove" size={"2em"} onClick={this.handleRemoveClick} />
             </Icon>
           </IconWrapper>
         </QueueItemStyle>

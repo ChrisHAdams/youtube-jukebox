@@ -78,8 +78,9 @@ class SearchResult extends React.Component {
 
     return (
       <div>
-        <SearchResultStyle key={this.props.video.id} >
+        <SearchResultStyle key={this.props.video.id} data-testid="searchResult">
           <ImageStyle
+            data-testid="searchResultImage"
             title={title}
             alt={title}
             src={this.props.video.thumbnails.default.url}
