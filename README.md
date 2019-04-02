@@ -1,6 +1,4 @@
-<h1 align="center">
-  A Gatsby YouTube Jukebox  [![Github Downloads (total)](https://img.shields.io/github/downloads/kotlin-graphics/kotlin-unsigned/total.svg)]()
-</h1>
+# A Gatsby YouTube Jukebox [![Github Downloads (total)](https://img.shields.io/github/downloads/kotlin-graphics/kotlin-unsigned/total.svg)]()
 
 I love YouTube, but it doesn't allow you to queue videos and even when searching for something it stops the current video.  I had a look around GitHub, but couldn't quite find what I was looking for, so I built my own using  <a href="https://www.gatsbyjs.org">Gatsby</a>.  If I'm honest, I wanted a small project to try Gatsby.  I've been using React for a few projects at work, but hadn't had the opportunity to try Gatsby.
 
