@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoPlayer renders correctly when URL is empty 1`] = `
+<div
+  className="sc-bwzfXH iwYVEw"
+>
+  <p
+    className="sc-htpNat bmBMrf"
+  >
+    No videos are queued...
+  </p>
+</div>
+`;

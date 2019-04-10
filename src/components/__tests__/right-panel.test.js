@@ -58,6 +58,32 @@ describe("RightPanel", () => {
     expect(getByTestId('rightPanel')).toHaveStyle(`background-color: '#f4f5f7'`);
   })
 
+  it("renders correctly based on light theme", () => {
+
+    const VideoQueue = [{
+      id: "someId",
+      title: "Some Title",
+      thumbnails:{
+        default:{
+          url:"www.something"
+        }
+      }
+
+    }];
+
+    const LightTheme = true;
+
+    const {getByTestId} = render(<RightPanel
+                videoQueue={VideoQueue}
+                lightTheme={LightTheme}
+                moveVideoUpQueue={"callback"}
+                moveVideoDownQueue={"callback"}
+                removeFromQueue={"callback"}
+                playNow={"callback"}/>);
+
+    expect(getByTestId('rightPanel')).toHaveStyle(`background-color: '#f4f5f7'`);
+  })
+
 })
 
 

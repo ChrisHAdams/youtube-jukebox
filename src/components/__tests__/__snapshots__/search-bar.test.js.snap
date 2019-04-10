@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar renders correctly 1`] = `
+<div
+  className="sc-ifAKCX fFOdlp"
+  data-testid="searchBar"
+>
+  <div>
+    <input
+      className="sc-bdVaJa fIgOID"
+      data-testid="searchField"
+      disabled={true}
+      name="searchField"
+      placeholder="Search for videos"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    className="sc-bwzfXH jcuoYi"
+    data-testid="searchButton"
+    onClick="callback"
+  >
+    Search
+  </button>
+  <button
+    className="sc-htpNat fBDJQi"
+    onClick="callback"
+  >
+    Reset
+  </button>
+  <button
+    className="sc-bxivhb dsnugm"
+    data-testid="themeChangeButton"
+    onClick="callback"
+  >
+    Change Theme
+  </button>
+</div>
+`;

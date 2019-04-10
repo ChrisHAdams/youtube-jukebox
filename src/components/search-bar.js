@@ -23,7 +23,7 @@ class SearchBar extends React.Component  {
 
   render() {
     return (
-      <SearchBarStyle>
+      <SearchBarStyle data-testid="searchBar">
         <SearchField
           searchValue={this.props.searchValue}
           searchValueChange={this.props.searchValueChange}

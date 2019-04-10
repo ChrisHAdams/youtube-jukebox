@@ -40,7 +40,7 @@ class VideoPlayer extends React.Component {
 
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(`Current video ${this.props.url}.  Next video ${nextProps.url}`);
+    //console.log(`Current video ${this.props.url}.  Next video ${nextProps.url}`);
 
 
     let update = false;
@@ -53,7 +53,7 @@ class VideoPlayer extends React.Component {
       update = true;
     }
 
-    console.log("Update? " + update);
+    //console.log("Update? " + update);
 
     return update;
   }
