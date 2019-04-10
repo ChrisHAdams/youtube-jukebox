@@ -1,8 +1,8 @@
 {
   "name": "youtube-jukebox",
   "private": false,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A YouTube Jukebox built using Gatsby",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
