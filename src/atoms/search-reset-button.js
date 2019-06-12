@@ -10,7 +10,7 @@ class SearchResetButton extends React.Component  {
 
   render() {
     return (
-      <SearchResetButtonStyle onClick={this.props.resetOnClick}>Reset</SearchResetButtonStyle>
+      <SearchResetButtonStyle data-testid="searchResetButton"  onClick={this.props.resetOnClick}>Reset</SearchResetButtonStyle>
 
     )
   }
