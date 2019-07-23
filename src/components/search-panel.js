@@ -37,6 +37,7 @@ class SearchPanel extends React.Component  {
     this.searchValueChange = this.searchValueChange.bind(this);
     this.searchValueReset = this.searchValueReset.bind(this);
     this.youTubeSearch = this.youTubeSearch.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
     this.apiKey = '';
 
     if(ApiKey.length > 0) {
@@ -74,6 +75,12 @@ class SearchPanel extends React.Component  {
       .catch(err => console.log(err));
   }
 
+  handleKeyPress = (event) => {
+    if(event.key === 'Enter'){
+      this.youTubeSearch();
+    }
+  }
+
 
   searchPromise(){
 
@@ -107,7 +114,8 @@ class SearchPanel extends React.Component  {
           searchOnClick={this.youTubeSearch}
           resetOnClick={this.searchValueReset}
           lightTheme={this.props.lightTheme}
-          themeChange={this.props.themeChange} />
+          themeChange={this.props.themeChange}
+          handleKeyPress={this.handleKeyPress} />
         <SearchResults
           results={this.state.searchResults}
           pushVideoToQueue={this.props.pushVideoToQueue}

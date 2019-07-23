@@ -1,5 +1,5 @@
 import React from "react";
-import Styled, {css} from 'styled-components';
+import Styled from 'styled-components';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
 import { FaArrowAltCircleDown } from 'react-icons/fa';
 import { FaTimesCircle } from 'react-icons/fa';

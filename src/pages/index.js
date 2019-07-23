@@ -42,6 +42,7 @@ class App extends React.Component  {
     this.removeFromQueue = this.removeFromQueue.bind(this);
     this.playNow = this.playNow.bind(this);
 
+
   }
 
   handleThemeChange() {

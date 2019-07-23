@@ -21,6 +21,8 @@ export default (props) =>
     placeholder="Search for videos"
     value={props.searchValue}
     onChange={props.searchValueChange}
-    disabled={!props.loggedIn} />
+    disabled={!props.loggedIn}
+    onKeyPress={props.handleKeyPress}/>
+
 </div>
 

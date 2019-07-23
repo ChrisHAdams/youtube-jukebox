@@ -26,10 +26,6 @@ const RightPanelStyleDark = Styled.div`
 
 class RightPanel extends React.Component  {
 
-  constructor(props) {
-    super(props);
-  }
-
 
   render() {
 

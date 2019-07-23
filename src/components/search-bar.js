@@ -25,6 +25,7 @@ class SearchBar extends React.Component  {
     return (
       <SearchBarStyle data-testid="searchBar">
         <SearchField
+          handleKeyPress={this.props.handleKeyPress}
           searchValue={this.props.searchValue}
           searchValueChange={this.props.searchValueChange}
           loggedIn={this.props.loggedIn}
