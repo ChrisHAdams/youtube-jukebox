@@ -25,6 +25,7 @@ exports[`SearchBar renders correctly 1`] = `
   </button>
   <button
     className="sc-htpNat fBDJQi"
+    data-testid="searchResetButton"
     onClick="callback"
   >
     Reset

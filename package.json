@@ -10,7 +10,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "test": "jest --coverage",
-    "test-update": "jest -u"
+    "jest-update": "jest -u"
   },
   "dependencies": {
     "gatsby": "^2.13.36",

@@ -1,13 +1,16 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import {render, fireEvent, cleanup} from 'react-testing-library'
+import {render, fireEvent, cleanup} from '@testing-library/react'
 import RightPanel from "../right-panel";
-import {toHaveStyle} from 'jest-dom';
+import {toHaveStyle} from '@testing-library/jest-dom';
+
 
 expect.extend({toHaveStyle})
 
 
 describe("RightPanel", () => {
+
+  afterEach(cleanup);
 
   it("renders correctly", () => {
 
@@ -31,7 +34,7 @@ describe("RightPanel", () => {
     const VideoQueue = [];
     const LightTheme = false;
 
-    const {getByTestId} = render(<RightPanel
+    let {getByTestId} = render(<RightPanel
                 videoQueue={VideoQueue}
                 lightTheme={LightTheme}
                 moveVideoUpQueue={"callback"}
@@ -47,7 +50,7 @@ describe("RightPanel", () => {
     const VideoQueue = [];
     const LightTheme = true;
 
-    const {getByTestId} = render(<RightPanel
+    let {getByTestId} = render(<RightPanel
                 videoQueue={VideoQueue}
                 lightTheme={LightTheme}
                 moveVideoUpQueue={"callback"}
@@ -73,7 +76,7 @@ describe("RightPanel", () => {
 
     const LightTheme = true;
 
-    const {getByTestId} = render(<RightPanel
+    let {getByTestId} = render(<RightPanel
                 videoQueue={VideoQueue}
                 lightTheme={LightTheme}
                 moveVideoUpQueue={"callback"}

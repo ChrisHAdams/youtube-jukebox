@@ -1,8 +1,8 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import {render, fireEvent, cleanup} from 'react-testing-library'
-import {toHaveStyle} from 'jest-dom';
 import SearchButton from "../search-button";
+import {render, fireEvent, cleanup} from '@testing-library/react'
+import {toHaveStyle} from '@testing-library/jest-dom';
 
 expect.extend({toHaveStyle});
 

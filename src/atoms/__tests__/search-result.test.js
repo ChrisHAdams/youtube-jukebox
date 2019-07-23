@@ -1,8 +1,9 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import {render, fireEvent, cleanup} from 'react-testing-library'
 import SearchResult from "../search-result";
-import {toHaveStyle} from 'jest-dom';
+
+import {render, fireEvent, cleanup} from '@testing-library/react'
+import {toHaveStyle} from '@testing-library/jest-dom';
 
 expect.extend({toHaveStyle})
 
@@ -18,6 +19,9 @@ const videoMock = {
 
 
 describe("SearchResult", () => {
+
+  afterEach(cleanup);
+
   it("renders correctly", () => {
 
     const onClick = (video)=>{
