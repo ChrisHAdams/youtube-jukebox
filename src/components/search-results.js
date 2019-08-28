@@ -45,7 +45,7 @@ class SearchResults extends React.Component  {
     const SearchResultsStyle = this.props.lightTheme ? SearchResultsStyleLight : SearchResultsStyleDark;
 
     return (
-      <SearchResultsStyle>
+      <SearchResultsStyle  data-testid="searchResults">
         {results}
       </SearchResultsStyle>
 

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResult renders correctly 1`] = `
+<div
+  className="sc-bZQynM ePMBCh"
+  data-testid="searchResults"
+/>
+`;

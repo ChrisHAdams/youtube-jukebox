@@ -3,7 +3,7 @@ import renderer from "react-test-renderer"
 import SearchResult from "../search-result";
 
 import {render, fireEvent, cleanup} from '@testing-library/react'
-import {toHaveStyle} from '@testing-library/jest-dom';
+import {toHaveStyle, toHaveTextContent} from '@testing-library/jest-dom';
 
 expect.extend({toHaveStyle})
 
@@ -40,8 +40,6 @@ describe("SearchResult", () => {
 
   it('calls "onClick" prop on button click', () => {
 
-    // Render new instance in every test to prevent leaking state
-    //const onClick = jest.fn();
     const lightThemeValue = false;
     let returnValue = '';
 
@@ -63,8 +61,6 @@ describe("SearchResult", () => {
 
   it('calls "onClick" prop on button click 2', () => {
 
-    // Render new instance in every test to prevent leaking state
-    //const onClick = jest.fn();
     const lightThemeValue = true;
 
 
